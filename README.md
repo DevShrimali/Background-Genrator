@@ -1,5 +1,6 @@
 # Background-Generator
 
-You can build Cool Background Greadient Genrate and CSS Auto Code Genrate Just you Have to Select What type of color palette You Need Its Automatically Generate Code .
-
+❤ CSS Gradient ❤
+CSS Gradient is a happy little website and free tool that lets you create a gradient background for websites. 
+Just Select Color from the Colorpickers And Copy Che Code 😊
 If You Like This Project Please Give Star
