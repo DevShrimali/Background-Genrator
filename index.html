@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gradient Background</title>
+	<link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=Quote">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="gradient">
-	<h1>Background Generator</h1>
-	<input class="color1" type="color" name="color1" value="#00ff00">
-	<input class="color2" type="color" name="color2" value="#ff0000">
-	<h2>Current CSS Background</h2>
-	<h3></h3>
+	
+	<div class="bg-container" id="bg-container">
+        <!-- Background Generator Code -->
+		<h1>Background Generator</h1>
+		
+		<h2>Current CSS Background</h2>
+		<h3 id="txtCopyInput"></h3> 
+
+		<input class="color1" type="color" name="color1" value="#cc2b5e">
+		<input class="color2" type="color" name="color2" value="#753a88">
+
+        <!-- BUtton -->
+        <div class="button-container">
+			<button id="btnCopy" 
+			data-clipboard-target ="#txtCopyInput">Copy CSS Code</button>
+        </div>
+    </div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+	<script>
+		let clipBoard1 = new ClipboardJS('#btnCopy');
+	</script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

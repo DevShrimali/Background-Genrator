@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html {
+    box-sizing: border-box;
+}
 body {
-	font: 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+    margin: 0;
+    min-height: 100vh;
+    
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif !important;  
+    font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    top: 15%;
-	background: linear-gradient(to right, red , yellow); /* Standard syntax */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+	background: linear-gradient(to right,#cc2b5e , #753a88); /* Standard syntax */
 }
 
 h1 {
-    font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+    font: 600 3.5em Montserrat, sans-serif;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5em;
@@ -18,10 +27,46 @@ h1 {
 }
 
 h3 {
-	font: 900 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+	font-family: 1em Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
 
+}
+
+.bg-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+.button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
