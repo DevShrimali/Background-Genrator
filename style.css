@@ -70,3 +70,12 @@ button:active {
     transform: translate(0, 0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
+/* Media Query : Tablet or Smaller */
+@media screen and (max-width: 1000px){
+    .bg-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
+}
